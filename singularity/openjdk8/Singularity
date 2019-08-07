@@ -1,0 +1,14 @@
+Bootstrap: docker
+From: ubuntu
+
+%help
+Singularity container providing jdk8 on an Ubuntu image
+
+%post
+
+apt update
+apt install -y openjdk-8-jdk
+apt install -y net-tools
+apt install -y netcat
+apt install -y wget
+apt install -y vim
